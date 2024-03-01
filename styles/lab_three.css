@@ -1,0 +1,24 @@
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+    height: 20px; 
+    padding: 10px; 
+  }
+  .responsive-iframe {
+    flex: 0 1 auto; 
+    width: 80%; 
+    max-width: 800px; 
+    aspect-ratio: 16 / 9;
+  }
+  @media (max-width: 600px) {
+    .responsive-iframe {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  @media (min-width: 1200px) {
+    .responsive-iframe {
+      width: 110%; /* Adjust width for larger screens */
+    }
+  }
